@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-labelledby="title desc" fill="none">
+  <title id="title">Route icon</title>
+  <desc id="desc">A Redza route with two checkpoints.</desc>
+  <path stroke="#e21a16" stroke-width="6" stroke-linecap="square" d="M14 72h22l16-20h27"/>
+  <path stroke="#fff" stroke-width="2" stroke-dasharray="1 7" d="M14 72h22l16-20h27"/>
+  <rect x="8" y="66" width="12" height="12" fill="#e21a16"/>
+  <rect x="73" y="46" width="12" height="12" fill="#e21a16"/>
+  <path fill="#0b0b0c" d="M12 70h4v4h-4zM77 50h4v4h-4z"/>
+</svg>

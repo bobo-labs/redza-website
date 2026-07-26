@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-labelledby="pattern-title pattern-desc">
+  <title id="pattern-title">Redza signal pattern</title>
+  <desc id="pattern-desc">A repeatable Redza pattern of red directional chevrons and route blocks.</desc>
+  <defs>
+    <pattern id="redza-signal" width="200" height="200" patternUnits="userSpaceOnUse">
+      <path fill="#e21a16" d="M-40 160 40 80h52l-80 80zM60 260l80-80h52l-80 80z"/>
+      <path fill="#0b0b0c" opacity=".12" d="M0 0h80v80H0zM120 120h80v80h-80z"/>
+      <path stroke="#e21a16" stroke-width="3" opacity=".28" d="M0 100h100M100 0v100M100 200v-50M200 100h-50"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="url(#redza-signal)"/>
+</svg>

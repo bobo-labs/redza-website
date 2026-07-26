@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-labelledby="title desc" fill="none">
+  <title id="title">Package icon</title>
+  <desc id="desc">An angular Redza cargo package.</desc>
+  <path fill="#e21a16" d="m48 12 32 17-32 18-32-18z"/>
+  <path fill="#bb1512" d="m16 29 32 18v37L16 67z"/>
+  <path fill="#e21a16" d="m80 29-32 18v37l32-19z"/>
+  <path stroke="#fff" stroke-width="4" d="M48 47v37M20 31l28 16 28-16"/>
+  <path stroke="#fff" stroke-width="4" d="M37 24h22"/>
+</svg>

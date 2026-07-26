@@ -1,0 +1,165 @@
+﻿import Image from 'next/image';
+import BrandStrip from './BrandStrip';
+import ChileRegionsMap from './ChileRegionsMap';
+import {
+  ArrowUpRight,
+  ChevronDown,
+  Clock3,
+  Mail,
+  MapPin,
+  MessageCircle,
+  PhoneCall,
+  ShieldCheck,
+} from 'lucide-react';
+
+const whatsapp = '56991499999';
+const whatsappLink = `https://wa.me/${whatsapp}?text=${encodeURIComponent('Hola Redza, necesito cotizar un servicio de transporte.')}`;
+
+const services = [
+  {
+    number: '01',
+    title: 'Distribución nacional',
+    text: 'Movemos tu carga entre Santiago y regiones con coordinación, trazabilidad y ventanas de entrega claras.',
+    icon: '/images/redza branding/redesign/redza route icon.svg',
+  },
+  {
+    number: '02',
+    title: 'Última milla B2B',
+    text: 'Reparto para retail, supermercados y operaciones corporativas que necesitan puntualidad en cada local.',
+    icon: '/images/redza branding/redesign/redza package icon.svg',
+  },
+  {
+    number: '03',
+    title: 'Carga con rampa',
+    text: 'Camiones con rampas hidráulicas autónomas para entregar donde no hay andén de descarga.',
+    icon: '/images/redza branding/redesign/redza ramp icon.svg',
+  },
+];
+
+const stats = [
+  ['01', 'Coordinación directa'],
+  ['02', 'Flota preparada'],
+  ['03', 'Cobertura nacional'],
+];
+
+const clients = [
+  {
+    number: '01',
+    name: 'Alvi Mayorista',
+    src: '/images/marcas que confian/alvi.webp',
+    alt: 'Logo Club Alvi Mayorista',
+    service: 'Distribución y abastecimiento',
+  },
+  {
+    number: '02',
+    name: 'Unimarc',
+    src: '/images/marcas que confian/unimarc.webp',
+    alt: 'Logo Unimarc',
+    service: 'Transporte para retail',
+  },
+];
+
+export default function Home() {
+  return (
+    <main>
+      <header className="site-header">
+        <div className="shell nav-wrap">
+          <a href="#inicio" className="brand" aria-label="Redza, volver al inicio">
+            <Image src="/images/redza branding/redesign/redza brand lockup.svg" alt="Redza Transporte y Logística" width={2510} height={430} className="brand-logo brand-logo-new" />
+            <Image src="/images/redza branding/lettering_white_red.webp" alt="Redza Transporte y Logística" width={190} height={34} className="brand-logo" />
+          </a>
+          <nav className="desktop-nav" aria-label="Navegación principal">
+            <a href="#servicios">Servicios</a>
+            <a href="#metodo">Cómo trabajamos</a>
+            <a href="#clientes">Clientes</a>
+            <a href="#cobertura">Cobertura</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+          <a className="nav-cta" href={whatsappLink} target="_blank" rel="noreferrer">Cotizar ahora <ArrowUpRight size={16} /></a>
+          <details className="mobile-menu">
+            <summary aria-label="Abrir menú"><span /><span /></summary>
+            <nav aria-label="Navegación móvil">
+              <a href="#servicios">Servicios</a>
+              <a href="#metodo">Cómo trabajamos</a>
+              <a href="#clientes">Clientes</a>
+              <a href="#cobertura">Cobertura</a>
+              <a href="#contacto">Contacto</a>
+            </nav>
+          </details>
+        </div>
+      </header>
+
+      <section className="hero" id="inicio">
+        <div className="hero-grid" aria-hidden="true"><span /><span /><span /><span /><span /></div>
+        <Image src="/images/redza branding/redesign/redza route system.svg" alt="" width={1400} height={360} className="hero-route-system" aria-hidden="true" />
+        <div className="shell hero-inner">
+          <div className="hero-copy">
+            <p className="eyebrow"><span>01</span> Logística que llega</p>
+            <h1>Que tu carga<br /><em>no se detenga.</em></h1>
+            <p className="hero-lede">Transporte confiable para empresas que necesitan cumplir. Conectamos tu operación con todo Chile, desde el retiro hasta la entrega final.</p>
+            <div className="hero-actions">
+              <a className="button button-primary" href={whatsappLink} target="_blank" rel="noreferrer"><MessageCircle size={18} /> Solicitar cotización</a>
+              <a className="text-link" href="#servicios">Explorar servicios <ArrowUpRight size={16} /></a>
+            </div>
+            <div className="hero-trust"><ShieldCheck size={17} /><span>Operación coordinada · Atención directa · Respuesta ágil</span></div>
+          </div>
+          <div className="hero-visual">
+            <div className="visual-label">REDZA / 24—7</div>
+            <div className="truck-frame">
+              <div className="frame-glow" />
+              <Image src="/images/redza branding/redza_truck_webready.webp" alt="Camión de transporte Redza" fill priority sizes="(max-width: 900px) 100vw, 48vw" className="truck-image" />
+              <div className="image-caption"><span>TRANSPORTE DE CARGA</span><strong>HECHO PARA AVANZAR</strong></div>
+            </div>
+            <div className="visual-note"><span>01</span><p>Del origen al destino,<br />con control en cada tramo.</p></div>
+          </div>
+        </div>
+        <div className="hero-scroll" aria-hidden="true"><span>Desliza para conocer Redza</span><ChevronDown size={16} /></div>
+      </section>
+
+      <BrandStrip />
+
+      <section className="intro-section section-pad">
+        <div className="shell intro-grid">
+          <div><p className="eyebrow"><span>02</span> Una operación que responde</p></div>
+          <div className="intro-content"><h2>La logística no es solo mover carga. <em>Es mover tu negocio.</em></h2><p>En Redza entendemos que una entrega a tiempo protege ventas, equipos y relaciones. Por eso combinamos flota, coordinación y seguimiento para que cada traslado tenga un responsable de principio a fin.</p><a className="text-link dark-link" href="#contacto">Hablemos de tu operación <ArrowUpRight size={16} /></a></div>
+        </div>
+      </section>
+
+      <section className="service-section section-pad" id="servicios">
+        <div className="shell">
+          <div className="section-heading"><div><p className="eyebrow"><span>03</span> Lo que hacemos</p><h2>Una solución para<br /><em>cada recorrido.</em></h2></div><p>Servicios de transporte pensados para operaciones reales: entregas urbanas, distribución regional y carga de mayor volumen.</p></div>
+          <div className="service-grid">{services.map((service) => <article className="service-card" key={service.number}><div className="card-top"><span>{service.number}</span><Image src={service.icon} alt="" width={52} height={52} className="service-icon" /></div><h3>{service.title}</h3><p>{service.text}</p><a href={whatsappLink} target="_blank" rel="noreferrer" aria-label={`Cotizar ${service.title}`}>Cotizar servicio <ArrowUpRight size={16} /></a></article>)}</div>
+        </div>
+      </section>
+
+      <section className="proof-section section-pad" id="metodo">
+        <div className="shell proof-grid">
+          <div className="proof-image"><span className="proof-image-label">FLOTA / OPERACIÓN</span><Image src="/images/redza branding/white_truck.webp" alt="Camión de transporte Redza" fill sizes="(max-width: 900px) 100vw, 42vw" className="proof-truck" /><Image src="/images/redza branding/lettering_white_red.webp" alt="Identidad Redza Transporte y Logística" fill sizes="(max-width: 900px) 100vw, 42vw" className="proof-logo" /><span className="proof-stamp">RZ / 2026</span></div>
+          <div className="proof-copy"><p className="eyebrow"><span>04</span> Nuestra forma de trabajar</p><h2>Simple para ti.<br /><em>Preciso para tu carga.</em></h2><div className="steps"><div><b>01</b><div><h3>Cuéntanos qué necesitas</h3><p>Origen, destino, tipo de carga y fecha. Te respondemos con claridad.</p></div></div><div><b>02</b><div><h3>Planificamos el recorrido</h3><p>Asignamos el vehículo y coordinamos la ventana de retiro y entrega.</p></div></div><div><b>03</b><div><h3>Seguimos hasta entregar</h3><p>Tu operación avanza con comunicación directa y seguimiento constante.</p></div></div></div></div>
+        </div>
+      </section>
+
+      <section className="coverage-section section-pad" id="cobertura">
+        <div className="shell coverage-grid"><div><p className="eyebrow"><span>05</span> Llegamos más lejos</p><h2>Desde Santiago<br />a todo <em>Chile.</em></h2><p className="coverage-copy">Construimos rutas para que tus productos lleguen a donde tienen que estar. Cobertura urbana, interurbana y nacional según la necesidad de tu operación.</p><a className="button button-light" href={whatsappLink} target="_blank" rel="noreferrer">Planificar una ruta <ArrowUpRight size={17} /></a></div><div className="map-card regions-map-card"><ChileRegionsMap /><div className="map-lines" aria-hidden="true" /><div className="map-point point-santiago"><span /><label>Santiago</label></div><div className="map-point point-north"><span /><label>Regiones</label></div><div className="map-point point-south"><span /><label>Sur de Chile</label></div><div className="map-route" aria-hidden="true" /><div className="map-footer"><span>COBERTURA</span><strong>URBANA · REGIONAL · NACIONAL</strong></div></div></div>
+      </section>
+
+      <section className="clients-section section-pad" id="clientes">
+        <div className="shell">
+          <div className="clients-heading"><div><p className="eyebrow"><span>06</span> Confianza que se mueve</p><h2>Empresas que<br /><em>confían en Redza.</em></h2></div><p>Nos eligen porque cada entrega necesita más que un camión: necesita coordinación, cuidado y una respuesta que no se detenga.</p></div>
+          <div className="clients-grid">
+            {clients.map((client) => <article className="client-card" key={client.name}><div className="client-card-top"><span>CLIENTE / {client.number}</span><ArrowUpRight size={16} /></div><div className="client-logo-wrap"><Image src={client.src} alt={client.alt} width={240} height={150} sizes="(max-width: 900px) 100vw, 30vw" className="client-logo" /></div><div className="client-card-bottom"><strong>{client.name}</strong><span>{client.service}</span></div></article>)}
+            <div className="client-note"><ShieldCheck size={23} /><div><strong>Tu operación, en buenas manos.</strong><p>Sumamos experiencia y seguimiento para que tu marca llegue bien representada a cada destino.</p><a className="text-link" href={whatsappLink} target="_blank" rel="noreferrer">Conversemos sobre tu operación <ArrowUpRight size={16} /></a></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="numbers-section section-pad"><div className="shell numbers-grid"><div><p className="eyebrow"><span>07</span> Por qué Redza</p><h2>El valor está en<br /><em>cómo lo hacemos.</em></h2></div><div className="numbers-list">{stats.map(([number, text]) => <div key={number}><strong>{number}</strong><span>{text}</span></div>)}</div></div></section>
+
+      <section className="contact-section" id="contacto"><div className="shell contact-grid"><div><p className="eyebrow"><span>08</span> Empecemos</p><h2>Tu próxima entrega<br /><em>parte aquí.</em></h2><p>Cuéntanos sobre tu operación y preparemos el recorrido correcto para tu carga.</p></div><div className="contact-card"><div><span className="contact-kicker">Respuesta directa</span><h3>Hablemos por WhatsApp</h3><p>Disponible para cotizaciones y coordinación de servicios.</p></div><a className="contact-action" href={whatsappLink} target="_blank" rel="noreferrer"><MessageCircle size={20} /> Escribir a Redza <ArrowUpRight size={17} /></a><div className="contact-details"><a href="tel:+56991499999"><PhoneCall size={16} /> +56 9 9149 9999</a><span><Clock3 size={16} /> Lunes a domingo · servicio continuo</span><a href="mailto:contacto@redza.cl"><Mail size={16} /> contacto@redza.cl</a></div></div></div></section>
+
+      <footer className="site-footer"><div className="shell footer-top"><a href="#inicio" className="brand footer-brand"><Image src="/images/redza branding/redesign/redza brand lockup.svg" alt="Redza Transporte y Logística" width={2510} height={430} className="brand-logo footer-lockup" /></a><div className="footer-links"><a href="#servicios">Servicios</a><a href="#metodo">Cómo trabajamos</a><a href="#clientes">Clientes</a><a href="#cobertura">Cobertura</a><a href="#contacto">Contacto</a></div><div className="footer-location"><MapPin size={16} /> Santiago, Chile</div></div><div className="shell footer-bottom"><span>© 2026 Redza Transporte y Logística</span><span>Movemos lo que importa.</span></div></footer>
+    </main>
+  );
+}
+
+

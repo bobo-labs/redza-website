@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 360" width="1400" height="360" role="img" aria-labelledby="route-title route-desc" fill="none">
+  <title id="route-title">Redza route system</title>
+  <desc id="route-desc">An angular red route line with checkpoint markers for Redza logistics.</desc>
+  <path stroke="#e21a16" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter" d="M40 276h240l130-156h280l110 132h280l96-112h184"/>
+  <path stroke="#fff" stroke-width="2" stroke-dasharray="2 16" opacity=".52" d="M40 276h240l130-156h280l110 132h280l96-112h184"/>
+  <g fill="#e21a16">
+    <rect x="25" y="261" width="30" height="30"/>
+    <rect x="265" y="261" width="30" height="30"/>
+    <rect x="435" y="105" width="30" height="30"/>
+    <rect x="645" y="237" width="30" height="30"/>
+    <rect x="925" y="237" width="30" height="30"/>
+    <rect x="1050" y="93" width="30" height="30"/>
+    <rect x="1355" y="149" width="30" height="30"/>
+  </g>
+  <g fill="#0b0b0c">
+    <rect x="35" y="271" width="10" height="10"/>
+    <rect x="275" y="271" width="10" height="10"/>
+    <rect x="445" y="115" width="10" height="10"/>
+    <rect x="655" y="247" width="10" height="10"/>
+    <rect x="935" y="247" width="10" height="10"/>
+    <rect x="1060" y="103" width="10" height="10"/>
+    <rect x="1365" y="159" width="10" height="10"/>
+  </g>
+</svg>

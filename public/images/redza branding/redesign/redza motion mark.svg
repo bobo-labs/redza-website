@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">Redza motion mark</title>
+  <desc id="desc">A red geometric logistics tile with a white forward arrow.</desc>
+  <path fill="#e21a16" d="M32 0h256l32 32v256l-64 32H32L0 288V32z"/>
+  <path fill="#fff" d="M52 139h149l-42-42 34-34 105 105-105 105-34-34 42-42H52z"/>
+  <path fill="#fff" d="M52 165h168v34H52z"/>
+</svg>

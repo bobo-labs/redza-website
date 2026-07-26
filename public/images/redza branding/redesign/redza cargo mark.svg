@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" width="600" height="460" role="img" aria-labelledby="cargo-title cargo-desc" shape-rendering="geometricPrecision">
+  <title id="cargo-title">Redza cargo mark</title>
+  <desc id="cargo-desc">An angular cargo box illustration in Redza red, dark red, and white.</desc>
+  <path fill="#e21a16" d="m300 24 244 120-244 128L56 144z"/>
+  <path fill="#bb1512" d="m56 144 244 128v250L56 394z"/>
+  <path fill="#e21a16" d="m544 144-244 128v250l244-128z"/>
+  <path fill="#fff" opacity=".96" d="m300 24 244 120-244 128L56 144zm0 28L89 144l211 110 211-110z" fill-rule="evenodd"/>
+  <path fill="#fff" opacity=".96" d="M278 164h44v194h-44z"/>
+  <path fill="#fff" opacity=".96" d="m108 172 170 89v38l-170-89zM322 261l170-89v38l-170 89z"/>
+  <path fill="#0b0b0c" opacity=".35" d="m300 272 244-128v26L300 298z"/>
+</svg>
