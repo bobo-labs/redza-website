@@ -53,14 +53,9 @@ El mapa base conserva la referencia y atribución de SimpleMaps en el archivo SV
 
 ## Corrección de codificación en español
 
-Se detectó y corrigió un problema de codificación UTF-8 que mostraba textos como:
+Se detectó y corrigió un problema de codificación UTF-8 que mostraba algunos acentos y caracteres especiales de forma incorrecta.
 
-- `DistribuciÃ³n`
-- `operaciÃ³n`
-- `Ãšltima`
-- `cotizaciÃ³n`
-
-Los textos fueron reparados en `src/app/page.tsx`. Ahora los acentos y caracteres especiales aparecen correctamente, incluyendo `Logística`, `operación`, `cotización`, `Última`, `coordinación` y `©`.
+Los textos fueron reparados en `src/app/page.tsx`. Ahora aparecen correctamente palabras como `Logística`, `operación`, `cotización`, `Última`, `coordinación` y `©`.
 
 ## Implementación técnica
 
@@ -75,7 +70,7 @@ Los textos fueron reparados en `src/app/page.tsx`. Ahora los acentos y caractere
 - `npm run build` — aprobado.
 - Los SVG principales fueron validados como XML correcto.
 - Se comprobó el renderizado local de textos en español.
-- Se verificó que el repositorio no contenga las secuencias de texto dañadas `Ã`, `Â` o `�`.
+- Se verificó que el contenido visible del sitio no contenga caracteres de codificación dañada.
 
 ## GitHub
 
