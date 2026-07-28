@@ -1,6 +1,7 @@
 ﻿import Image from 'next/image';
 import BrandStrip from './BrandStrip';
 import ChileRegionsMap from './ChileRegionsMap';
+import HeroVideo from './HeroVideo';
 import {
   ArrowUpRight,
   ChevronDown,
@@ -105,11 +106,7 @@ export default function Home() {
           </div>
           <div className="hero-visual">
             <div className="visual-label">REDZA / 24—7</div>
-            <div className="truck-frame">
-              <div className="frame-glow" />
-              <Image src="/images/redza branding/redza_truck_webready.webp" alt="Camión de transporte Redza" fill priority sizes="(max-width: 900px) 100vw, 48vw" className="truck-image" />
-              <div className="image-caption"><span>TRANSPORTE DE CARGA</span><strong>HECHO PARA AVANZAR</strong></div>
-            </div>
+            <HeroVideo />
             <div className="visual-note"><span>01</span><p>Del origen al destino,<br />con control en cada tramo.</p></div>
           </div>
         </div>
