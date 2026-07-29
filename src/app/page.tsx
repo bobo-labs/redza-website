@@ -145,6 +145,17 @@ export default function Home() {
             <div className="field-note"><span>RZ / 05</span><p>Una flota visible, cuidada y preparada para que tu operación avance.</p><a className="text-link" href={whatsappLink} target="_blank" rel="noreferrer">Coordinar una ruta <ArrowUpRight size={16} /></a></div>
             <figure className="field-card field-card-yard"><Image src="/images/redza_fotos/optimized/redza-flota-vehiculos-distribucion.webp" alt="Vehículos de distribución Redza estacionados en patio operativo" fill sizes="(max-width: 900px) 100vw, 33vw" /><figcaption><span>FLOTA / 02</span><strong>Vehículos para cada recorrido.</strong></figcaption></figure>
             <figure className="field-card field-card-patio"><Image src="/images/redza_fotos/optimized/redza-flota-camiones-patio.webp" alt="Camiones Redza preparados en un patio logístico" fill sizes="(max-width: 900px) 100vw, 33vw" /><figcaption><span>PATIO / 03</span><strong>Coordinación desde el origen.</strong></figcaption></figure>
+            <aside className="field-operations-board" aria-label="Flujo operativo Redza">
+              <div className="field-board-top"><span>RUTA ACTIVA / REDZA</span><span className="field-board-live"><i /> OPERACIÓN 24—7</span></div>
+              <div className="field-board-content">
+                <div className="field-board-copy"><span>CONTROL DE PUNTA A PUNTA</span><p>Un recorrido.<br /><strong>Tres puntos de control.</strong></p></div>
+                <ol className="field-route-stations">
+                  <li><b>01</b><strong>Retiro</strong><small>Origen confirmado</small></li>
+                  <li><b>02</b><strong>Coordinación</strong><small>Ruta monitoreada</small></li>
+                  <li><b>03</b><strong>Entrega</strong><small>Destino cumplido</small></li>
+                </ol>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
