@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 
 export default function HeroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isClear, setIsClear] = useState(true);
+  const [isClear, setIsClear] = useState(false);
 
   useEffect(() => {
     const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -46,7 +46,7 @@ export default function HeroVideo() {
       <div className="hero-video-glass" aria-hidden="true" />
       <div className="hero-video-gridlines" aria-hidden="true" />
       <div className="hero-video-status"><span /> Operación en terreno</div>
-      <button className="hero-video-control" type="button" onClick={() => setIsClear((current) => !current)} aria-pressed={!isClear} aria-label={isClear ? 'Activar efecto vidrio sobre el video' : 'Mostrar video con claridad'}>
+      <button className="hero-video-control" type="button" onClick={() => setIsClear((current) => !current)} aria-pressed={isClear} aria-label={isClear ? 'Activar efecto vidrio sobre el video' : 'Mostrar video con claridad'}>
         {isClear ? <Eye size={15} /> : <EyeOff size={15} />}
       </button>
       <div className="image-caption"><span>TRANSPORTE DE CARGA / REGISTRO 02</span><strong>CARGA EN MOVIMIENTO</strong></div>
