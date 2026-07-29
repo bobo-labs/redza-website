@@ -201,9 +201,10 @@ h2 { margin-bottom: 22px; font-size: clamp(40px, 5vw, 64px); line-height: .98; f
 .regions-map-stage::before { position: absolute; inset: 14px; border: 1px solid rgba(255,255,255,.07); content: ''; pointer-events: none; }
 .regions-map { position: absolute; inset: 9px; width: calc(100% - 18px); height: calc(100% - 18px); overflow: visible; }
 .regions-map-features { filter: drop-shadow(0 10px 10px rgba(0,0,0,.28)); }
-.region-shape { fill: var(--region-color); cursor: pointer; opacity: .82; stroke: rgba(255,255,255,.78); stroke-width: 1.4; vector-effect: non-scaling-stroke; transform-box: fill-box; transform-origin: center; transition: fill .25s ease, opacity .25s ease, filter .25s ease, transform .25s ease; }
+.region-shape { fill: var(--region-color); cursor: pointer; opacity: .82; stroke: rgba(255,255,255,.78); stroke-width: 1.4; vector-effect: non-scaling-stroke; transform-box: fill-box; transform-origin: center; -webkit-tap-highlight-color: transparent; transition: fill .25s ease, opacity .25s ease, filter .25s ease, transform .25s ease; }
 .region-shape:hover, .region-shape.is-active { fill: #ff554a; opacity: 1; filter: drop-shadow(0 9px 11px rgba(226,26,22,.46)); transform: scale(1.035); }
-.region-shape:focus-visible { outline: none; stroke: white; stroke-width: 3; }
+.region-shape:focus { outline: 0 !important; }
+.region-shape:focus-visible { outline: 0 !important; stroke: white; stroke-width: 3; }
 .regions-map-legend, .regions-map-note { position: absolute; z-index: 2; color: rgba(255,255,255,.48); font-family: var(--font-dm-mono), monospace; font-size: 8px; letter-spacing: .08em; text-transform: uppercase; }
 .regions-map-legend { top: 23px; left: 23px; display: flex; align-items: center; gap: 8px; }
 .legend-dot, .status-pulse { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 4px rgba(226,26,22,.18); }
