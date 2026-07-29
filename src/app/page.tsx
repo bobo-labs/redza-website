@@ -11,6 +11,7 @@ import {
   MessageCircle,
   PhoneCall,
   ShieldCheck,
+  Truck,
 } from 'lucide-react';
 
 const whatsapp = '56991499999';
@@ -149,11 +150,14 @@ export default function Home() {
               <div className="field-board-top"><span>RUTA ACTIVA / REDZA</span><span className="field-board-live"><i /> OPERACIÓN 24—7</span></div>
               <div className="field-board-content">
                 <div className="field-board-copy"><span>CONTROL DE PUNTA A PUNTA</span><p>Un recorrido.<br /><strong>Tres puntos de control.</strong></p></div>
-                <ol className="field-route-stations">
-                  <li><b>01</b><strong>Retiro</strong><small>Origen confirmado</small></li>
-                  <li><b>02</b><strong>Coordinación</strong><small>Ruta monitoreada</small></li>
-                  <li><b>03</b><strong>Entrega</strong><small>Destino cumplido</small></li>
-                </ol>
+                <div className="field-route-flow">
+                  <span className="field-route-vehicle" aria-hidden="true"><Truck size={15} strokeWidth={2} /></span>
+                  <ol className="field-route-stations">
+                    <li><b>01</b><strong>Retiro</strong><small>Origen confirmado</small></li>
+                    <li><b>02</b><strong>Coordinación</strong><small>Ruta monitoreada</small></li>
+                    <li><b>03</b><strong>Entrega</strong><small>Destino cumplido</small></li>
+                  </ol>
+                </div>
               </div>
             </aside>
           </div>
