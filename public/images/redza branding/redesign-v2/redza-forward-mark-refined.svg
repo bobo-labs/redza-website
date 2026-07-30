@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">Redza forward mark</title>
+  <desc id="desc">A compact Redza red logistics mark with a white forward arrow.</desc>
+  <path fill="#e21a16" d="M64 32h320l96 96v256l-96 96H64l-32-32V64z"/>
+  <path fill="#fff" d="M96 220h206l-58-58 42-42 136 136-136 136-42-42 58-58H96z"/>
+</svg>

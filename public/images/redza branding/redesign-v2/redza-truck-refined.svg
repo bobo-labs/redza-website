@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 36 1896 288" role="img" aria-labelledby="title desc" shape-rendering="geometricPrecision">
+  <title id="title">Redza refined truck</title>
+  <desc id="desc">A simplified geometric freight truck moving to the right with white and Redza red motion signals.</desc>
+  <g fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="miter">
+    <path stroke-width="26" d="M640 68h828v164H640"/>
+    <path stroke-width="22" d="M626 256h648M1386 256h250M1748 256h100"/>
+    <circle cx="1330" cy="256" r="43" stroke-width="24"/>
+    <circle cx="1692" cy="256" r="43" stroke-width="24"/>
+  </g>
+  <path fill="#fff" fill-rule="evenodd" d="M1468 244V118l78-64h172l90 72 40 84v34zm40-100h252l-66-54h-137z"/>
+  <circle cx="1330" cy="256" r="8" fill="#fff"/>
+  <circle cx="1692" cy="256" r="8" fill="#fff"/>
+  <path fill="#fff" d="M16 72h548l104 28H102zm96 102h458l94 24H176zm134 44h344l72 18H302z"/>
+  <path fill="#e21a16" d="M0 122h544l134 32H74z"/>
+</svg>
